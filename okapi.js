@@ -41,3 +41,11 @@ for(all) {
     log((docN + 1)/(DF[i] + 0.5)) *
     ((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]);
 }
+
+//  Atire BM25
+
+for(all) {
+    score +=
+    log((docN)/(DF[i])) *
+    ((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]);
+}
