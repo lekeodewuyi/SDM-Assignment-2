@@ -57,3 +57,12 @@ for(all) {
     log((docN + 1)/(DF[i])) *
     (((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]) + d);
 }
+
+// TF X IDF
+
+for(all) {
+    score +=
+    log((docN + 1)/(DF[i])) *
+    (1 + log(1 + log(((tf[i])/((1 - b) + (b * docLength/docLengthAvg))) + d)));
+}
+
