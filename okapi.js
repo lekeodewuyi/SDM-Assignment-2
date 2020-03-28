@@ -49,3 +49,11 @@ for(all) {
     log((docN)/(DF[i])) *
     ((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]);
 }
+
+// BM25+ Different IDF (log component)
+
+for(all) {
+    score +=
+    log((docN + 1)/(DF[i])) *
+    (((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]) + d);
+}
