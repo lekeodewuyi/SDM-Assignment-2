@@ -6,3 +6,13 @@ for(all) {
     ((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]) *
     ((k3 + 1) * qf[i])/(k3 + qf[i])
 }
+
+
+// Modified Okapi UIUC
+
+for(all) {
+    score +=
+    log((docN + 1)/(DF[i])) *
+    ((k1 + 1) * tf[i])/(k1 * ((1 - b) + (b * docLength/docLengthAvg)) + tf[i]) *
+    ((k3 + 1) * qf[i])/(k3 + qf[i])
+}
