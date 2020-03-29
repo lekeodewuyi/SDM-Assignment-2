@@ -1,5 +1,9 @@
 // Original Okapi
 
+double k1 = 1.2;
+int k3 = 1000;
+double b = 0.75;
+
 for(all) {
     score +=
     log((docN - DF[i] + 0.5)/(DF[i] + 0.5)) *
